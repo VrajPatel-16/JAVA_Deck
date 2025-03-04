@@ -19,3 +19,9 @@ class Card {
     public String getSuit() {
         return suit;
     }
+
+    // toString method to display the card in "Rank of Suit" format
+    public String toString() {
+        return rank + " of " + suit;
+    }
+}
