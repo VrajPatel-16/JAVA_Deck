@@ -24,3 +24,11 @@ class Deck {
             }
         }
     }
+
+    // Prints all cards in the deck
+    public void printDeck() {
+        System.out.println("\n📜 Current Deck:");
+        for (Card card : cardDeck) {
+            System.out.println(card);
+        }
+    }
