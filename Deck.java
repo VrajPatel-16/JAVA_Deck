@@ -77,3 +77,12 @@ class Deck {
         }
         System.out.println("\n Card not found!");
     }
+
+    // Deals 5 random cards
+    public void dealCard() {
+        System.out.println("\n 5 Random Cards:");
+        Collections.shuffle(cardDeck);
+        for (int i = 0; i < 5; i++) {
+            System.out.println(cardDeck.get(i));
+        }
+    }
