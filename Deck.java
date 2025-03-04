@@ -27,7 +27,7 @@ class Deck {
 
     // Prints all cards in the deck
     public void printDeck() {
-        System.out.println("\n Current Deck:");
+        System.out.println("\n📜 Current Deck:");
         for (Card card : cardDeck) {
             System.out.println(card);
         }
@@ -36,8 +36,18 @@ class Deck {
     // Prints a specific card by index
     public void printCard(int index) {
         if (index >= 0 && index < cardDeck.size()) {
-            System.out.println("\n Selected Card: " + cardDeck.get(index));
+            System.out.println("\n🔹 Selected Card: " + cardDeck.get(index));
         } else {
-            System.out.println("\n Invalid card index!");
+            System.out.println("\n❌ Invalid card index!");
+        }
+    }
+
+    // Finds and prints all cards of the same suit
+    public void sameCard(String suit) {
+        System.out.println("\n📌 Cards with Suit: " + suit);
+        for (Card card : cardDeck) {
+            if (card.getSuit().equalsIgnoreCase(suit)) {
+                System.out.println(card);
+            }
         }
     }
