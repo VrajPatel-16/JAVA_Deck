@@ -66,3 +66,14 @@ class Deck {
             System.out.println("\n Invalid card indices!");
         }
     }
+
+    // Finds a specific card by rank and suit
+    public void findCard(String rank, String suit) {
+        for (Card card : cardDeck) {
+            if (card.getRank().equalsIgnoreCase(rank) && card.getSuit().equalsIgnoreCase(suit)) {
+                System.out.println("\n Card Found: " + card);
+                return;
+            }
+        }
+        System.out.println("\n Card not found!");
+    }
