@@ -86,3 +86,10 @@ class Deck {
             System.out.println(cardDeck.get(i));
         }
     }
+
+    // Shuffles the deck
+    public void shuffleDeck() {
+        Collections.shuffle(cardDeck);
+        System.out.println("\n Deck Shuffled Successfully!");
+    }
+}
