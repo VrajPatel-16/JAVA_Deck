@@ -27,8 +27,17 @@ class Deck {
 
     // Prints all cards in the deck
     public void printDeck() {
-        System.out.println("\n📜 Current Deck:");
+        System.out.println("\n Current Deck:");
         for (Card card : cardDeck) {
             System.out.println(card);
+        }
+    }
+
+    // Prints a specific card by index
+    public void printCard(int index) {
+        if (index >= 0 && index < cardDeck.size()) {
+            System.out.println("\n Selected Card: " + cardDeck.get(index));
+        } else {
+            System.out.println("\n Invalid card index!");
         }
     }
